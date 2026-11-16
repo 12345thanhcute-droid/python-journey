@@ -1,24 +1,28 @@
 """
-Bài tập 03: Trò chuyện với Python 💬
-=====================================
+Bài tập 03: Trò chuyện với Python
 Mục tiêu: Sử dụng input() để nhận dữ liệu từ người dùng
 """
 
 # TODO 1: Hỏi tên người dùng và in lời chào
-# Ví dụ: "Xin chào, Minh!"
+ten = input("Nhập tên của bạn: ")
+print("Xin chào,", ten)
 
+# TODO 2: Hỏi tuổi và tính năm sinh
+tuoi = int(input("Nhập tuổi của bạn: "))
+nam_sinh = 2026 - tuoi
+print("Bạn sinh năm:", nam_sinh)
 
-# TODO 2: Hỏi tuổi người dùng, tính và in năm sinh
-# Gợi ý: Nhớ chuyển input sang int!
+# TODO 3: Nhập 2 số và tính tổng
+so1 = int(input("Nhập số thứ nhất: "))
+so2 = int(input("Nhập số thứ hai: "))
+tong = so1 + so2
+print("Tổng:", so1, "+", so2, "=", tong)
 
+# TODO 4: Tạo Mad Libs mini
+ten = input("Nhập tên: ")
+tinh_tu = input("Nhập một tính từ: ")
+con_vat = input("Nhập tên con vật: ")
+so = input("Nhập một số: ")
 
-# TODO 3: Hỏi người dùng nhập 2 số, tính và in tổng
-# Ví dụ output:
-# Nhập số thứ nhất: 15
-# Nhập số thứ hai: 27
-# Tổng: 15 + 27 = 42
-
-
-# TODO 4 (Thử thách): Tạo Mad Libs mini
-# Hỏi người dùng nhập: tên, tính từ, con vật, số
-# Rồi in ra câu chuyện vui
+print(ten, "có một chú", con_vat, tinh_tu,
+      "và nó đã chạy được", so, "vòng quanh sân!")
