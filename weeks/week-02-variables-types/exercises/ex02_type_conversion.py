@@ -5,23 +5,32 @@ Mục tiêu: Thành thạo int(), float(), str(), bool()
 """
 
 # TODO 1: Cho so_text = "42"
-# Chuyển sang int, cộng thêm 8, in kết quả
 so_text = "42"
-
+so = int(so_text)
+print(so + 8)
 
 # TODO 2: Cho pi = 3.14159
-# Chuyển sang int (sẽ được bao nhiêu?), in kết quả
 pi = 3.14159
+pi_integer = int(pi)
+print(pi_integer)
 
+# TODO 3: Kiểm tra bool() của các giá trị sau
+values = (0, 1, "", "hello", [], [1, 2])
+for value in values:
+    print(f"bool({value!r}) = {bool(value)}")
 
-# TODO 3: Kiểm tra bool() của các giá trị sau và in kết quả
-# bool(0), bool(1), bool(""), bool("hello"), bool([]), bool([1,2])
+# TODO 4: Nhập chiều cao (m) và cân nặng (kg)
+height_text = input("Chiều cao (m): ")
+weight_text = input("Cân nặng (kg): ")
+height = float(height_text)
+weight = float(weight_text)
+bmi = weight / (height ** 2)
+print(f"BMI: {bmi:.1f}")
 
-
-# TODO 4: Nhập chiều cao (m) và cân nặng (kg) từ người dùng
-# Tính BMI = cân_nặng / (chiều_cao ** 2)
-# In ra BMI với 1 chữ số thập phân
-
-
-# TODO 5 (Thử thách): Nhập số giây, chuyển sang giờ:phút:giây
-# Ví dụ: 3661 giây → "1 giờ 1 phút 1 giây"
+# TODO 5 (Thử thách): Nhập số giây
+seconds_text = input("Số giây: ")
+total_seconds = int(seconds_text)
+hours = total_seconds // 3600
+minutes = (total_seconds % 3600) // 60
+seconds = total_seconds % 60
+print(f"{hours} giờ {minutes} phút {seconds} giây")
